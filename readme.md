@@ -20,15 +20,18 @@ Um componente de slideshow para fazer um giro através de elementos (imagens ou 
 
 ### B) Slider com controles:
 
-- adicionar um link na tag &lt;a&gt;, com a class="carousel-control-prev", e atributo data-slide="data-slide";
+- abaixo do fechamento da div inner, adicionar um link na tag &lt;a&gt;, com a class="carousel-control-prev", e atributo data-slide="data-slide";
 - no span, adicionar uma class="carousel-control-prev-icon";
 - definir um id na primeira div do carousel, e nos referi-lo a ele no href da tag a;
 - copiar e colar o procedimento acima, trocando "prev" por "next".
 
 ### C) Slider com controles/indicadores:
 
-- 
+- para definir os indicadores, incluir abaixo de carousel e acima de inner;
+- criar uma ol, com class="carousel-indicators";
+- criar os itens (li), com data-target="id colocado na div carousel", data-slide-to="0" (e adicionar 1 a cada item) e class="active".
 
 ### D) Slider com legendas:
 
-- 
+- criar uma div abaixo da imagem, com a class="carousel-caption", e incluir as tags de texto e conteúdos em seu interior;
+- pode ser incluída também uma nova div para adicionar formatações.
